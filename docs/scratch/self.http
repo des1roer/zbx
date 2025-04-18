@@ -1,0 +1,14 @@
+POST {{zbx_host}}/api_jsonrpc.php
+Content-Type: application/json-rpc
+
+{
+    "jsonrpc": "2.0",
+    "method": "user.login",
+    "params": {
+      "user": "Admin",
+      "password": "zabbix"
+    },
+    "id": 1
+  }
+
+
