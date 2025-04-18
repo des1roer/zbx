@@ -49,6 +49,8 @@ services:
       - zabbix-mysql-data:/var/lib/mysql
     networks:
       - zabbix-net
+    ports:
+      - "${ZABBIX_MYSQL_EXTERNAL_PORT}:3306"
 
   zabbix-agent:
     image: zabbix/zabbix-agent:6.0-alpine-latest
